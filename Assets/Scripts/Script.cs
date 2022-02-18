@@ -5,11 +5,12 @@ using UnityEngine;
 public class Script : MonoBehaviour
 {
     public GameObject bulletPrefab;
-    protected Transform gunNozzle;
+    public Transform gunNozzle;
     // Start is called before the first frame update
+    float speed = 5000f;
     void Start()
     {
-
+        //This is the debug script with a test fire using middle mouse.
     }
 
     // Update is called once per frame
@@ -52,6 +53,11 @@ public class Script : MonoBehaviour
                     Debug.Log("ENEMY!");
                     Shoot();
                 }
+                if (rayHit.transform.gameObject.GetComponent<Terrain>())
+                {
+                    Debug.Log("TERRAIN!");
+                    Shoot();
+                }
 
             }
         }
@@ -59,7 +65,7 @@ public class Script : MonoBehaviour
     private void Shoot()
     {
         GameObject go = Instantiate(bulletPrefab, gunNozzle.position, Quaternion.identity);
-        go.GetComponent<Rigidbody>().AddForce(gunNozzle.forward);
+        go.GetComponent<Rigidbody>().AddForce(gunNozzle.forward * speed);
     }
 
     void Jump()

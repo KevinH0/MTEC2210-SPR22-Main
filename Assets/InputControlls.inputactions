@@ -1,0 +1,145 @@
+{
+    "name": "InputControlls",
+    "maps": [
+        {
+            "name": "SpaceJump",
+            "id": "d831597c-7521-43d4-9f38-78800d8177f8",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "31f5d4b9-1f33-4f0e-8669-618e699eb4f2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f1e71b26-5953-4ac8-9727-1f19bb6f493b",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Strafe",
+            "id": "6009a8bb-e745-40c0-ab00-fb6d4d42c039",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "9869ee4f-6ed7-42a9-a8d3-bc1bb6754e01",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Strafe",
+                    "id": "9cbe0999-dce8-4578-91a4-8de7fc45f0c1",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "b07b4c5c-3fd7-4e34-8856-8e33debf19ca",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "d74c6e72-8828-4830-b454-2cf0ef45e4a4",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Forward backward",
+                    "id": "fb3c8147-72c4-4879-8b3e-82cfea625c3d",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "ef18cbda-0efd-49dc-9ac3-4e64d4cc21bc",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "62132e2f-98d5-4ae0-aed6-de31b854f302",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "Shoot",
+            "id": "ea88984c-46a6-4d65-93ba-40fd8874f38b",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "54995604-e9d0-466a-aa22-2654a8f9faaa",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "70f90f4b-70fd-4e93-8b4c-9a58a9a6cf85",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
