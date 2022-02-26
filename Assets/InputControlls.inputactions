@@ -6,7 +6,7 @@
             "id": "d831597c-7521-43d4-9f38-78800d8177f8",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "Jump",
                     "type": "Button",
                     "id": "31f5d4b9-1f33-4f0e-8669-618e699eb4f2",
                     "expectedControlType": "Button",
@@ -23,7 +23,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -34,7 +34,7 @@
             "id": "6009a8bb-e745-40c0-ab00-fb6d4d42c039",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "Strafe",
                     "type": "Button",
                     "id": "9869ee4f-6ed7-42a9-a8d3-bc1bb6754e01",
                     "expectedControlType": "Button",
@@ -51,7 +51,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Strafe",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -62,7 +62,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Strafe",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -73,7 +73,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Strafe",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -84,7 +84,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Strafe",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -95,7 +95,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Strafe",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -106,7 +106,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Strafe",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }
@@ -117,9 +117,18 @@
             "id": "ea88984c-46a6-4d65-93ba-40fd8874f38b",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "Fire",
                     "type": "Button",
                     "id": "54995604-e9d0-466a-aa22-2654a8f9faaa",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "fire1",
+                    "type": "Button",
+                    "id": "fe6d80fc-a679-4bcf-b87f-cbf623a65d36",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -134,9 +143,165 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Fire",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "52435f0f-c6d7-47a9-9301-286c3dbe86b0",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5e17b86f-f0bb-48f2-b9f2-a4dfd544964e",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "fire1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Playermap",
+            "id": "a585da9e-6a8b-4889-8060-298e34a0849d",
+            "actions": [
+                {
+                    "name": "Fire",
+                    "type": "Button",
+                    "id": "3d46dc95-0bda-49f3-b897-7670bcd20192",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "8ddb14dc-cab2-4a4a-afc6-3e128ed696b4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Strafe",
+                    "type": "Button",
+                    "id": "da7ca6b0-d4b5-4870-8ad2-5a92b9c9ec4f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "16312c26-8aa0-4ec1-967a-ac75f398e479",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0233114c-4941-4798-85a7-f0d39943d056",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e77ac881-77b9-4493-83f2-ec0eade3c791",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "403f98d4-229f-44d7-9846-8677a5f56e7b",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Strafe",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "0fcc059b-c584-4df7-825d-f7095051ecfa",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Strafe",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "c07e035c-7083-4bad-b917-346d5dab70b9",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Strafe",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "314fbdb2-d366-4efb-a065-3981d4e754b8",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Strafe",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "e59695fb-d3d3-4844-87a8-61c31c0d10e4",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Strafe",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "8f3650db-e809-42ac-8a75-31097ef7ce02",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Strafe",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }
